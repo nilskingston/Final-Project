@@ -1,1 +1,14 @@
 "nils kingston final project"
+
+piece = input("Would you like to be X or O? X always goes first ")
+print(piece)
+
+board_layout = '''=======
+|·|·|·|
+=======
+|·|·|·|
+=======
+|·|·|·|
+======='''
+print(board_layout)
+
