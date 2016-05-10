@@ -1,14 +1,19 @@
 "nils kingston final project"
 
-piece = input("Would you like to be X or O? X always goes first ")
-print(piece)
+print("WELCOME")
+print('''This game uses these keys to simulate the playing area:
+Q W E
+A S D
+Z X C''')
 
-board_layout = '''=======
+piece = input("Player 1 will go first.  Would you like to be X or O?: ")
+
+def board_layout = '''=======
 |·|·|·|
 =======
 |·|·|·|
 =======
 |·|·|·|
 ======='''
-print(board_layout)
+
 
