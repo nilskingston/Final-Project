@@ -19,5 +19,16 @@ def print_board():
     print("|{}|{}|{}|".format(board[6], board[7], board[8]))
     print("=======")
 
-board[0] = "X"
+q=0
+w=1
+e=2
+a=3
+s=4
+d=5
+z=6
+x=7
+c=8
+
+board[input("First move?")] = "X"
 print_board()
+
