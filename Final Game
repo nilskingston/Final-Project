@@ -1,1 +1,37 @@
-print("Hello, world.")
+"nils kingston final project"
+t = 150
+s = 15
+board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
+
+
+print("WELCOME")
+print('''This game uses these keys to simulate the playing area:
+	Q W E
+	A S D
+	Z X C''')
+
+
+	#piece = input("Player 1 will go first.  Would you like to be X or O?: ")
+
+
+	game_over = (0,1,2) or (3,4,5) or (6,7,8) or (0,3,6) or (1,4,7) or (2,5,8) or (0,4,8) or (2,4,6)
+	def print_board():
+	    print("=======")
+	    print("|{}|{}|{}|".format(board[0], board[1], board[2]))
+	    print("=======")
+	    print("|{}|{}|{}|".format(board[3], board[4], board[5]))
+	    print("=======")
+	    print("|{}|{}|{}|".format(board[6], board[7], board[8]))
+	    print("=======")
+
+
+	keymap = {"q":0,"w":1,"e":2,"a":3,"s":4,"d":5,"z":6,"x":7,"c":8}
+	while True:
+	    input = input("Select an open spot ")
+	    input = int(input)
+	    if board[input] != O and board[input] != X:
+	        board[input] = "X"
+	    
+	    else: 
+	        print("This spot is taken")
+	    print_board()
