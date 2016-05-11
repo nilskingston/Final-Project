@@ -9,7 +9,7 @@ A S D
 Z X C''')
 
 #piece = input("Player 1 will go first.  Would you like to be X or O?: ")
-
+game_over = (0,1,2) or (3,4,5) or (6,7,8) or (0,3,6) or (1,4,7) or (2,5,8) or (0,4,8) or (2,4,6)
 def print_board():
     print("=======")
     print("|{}|{}|{}|".format(board[0], board[1], board[2]))
