@@ -33,4 +33,4 @@ while True:
 	    
     else: 
         print("This spot is taken")
-    print_board
+    print_board()
