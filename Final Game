@@ -29,7 +29,7 @@ keymap = {"q":0,"w":1,"e":2,"a":3,"s":4,"d":5,"z":6,"x":7,"c":8}
 while True:
     input = input("Select an open spot ")
     input = int(input)
-    if board[input] != "O" and board[input] != "X"
+    if board[input] != "O" and board[input] != "X":
         board[input] = "X"
 	    
     else: 
