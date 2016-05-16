@@ -32,5 +32,5 @@ while True:
         board[input] = "X"
 	    
     else: 
-        print("This spot is taken")
+        print("This spot is taken"
     print_board()
