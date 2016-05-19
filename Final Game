@@ -25,6 +25,15 @@ def print_board():
     print("=======")
 
 def game_over():
+    empty_space = False
+    for e in board:
+        if e == " ":
+            empty_space = True
+    if not empty_space:
+        return True
+    if board[0] != " "
+        peice = board[0]
+        
     
 
 keymap = {"q":0,"w":1,"e":2,"a":3,"s":4,"d":5,"z":6,"x":7,"c":8}
