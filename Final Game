@@ -35,6 +35,8 @@ def game_over():
     for y in range(0, 2):
         position = y * 3
         peice = board[position]
+        if peice == " ":
+            break
         row_win = True
         for x in range(1, 2):
             if board[position + x] != peice:
