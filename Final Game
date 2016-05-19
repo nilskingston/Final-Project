@@ -51,7 +51,7 @@ while True:
     slot = keymap[input("Select an open spot ")]
     
     if board[slot] == " ":
-        board[slot] = peice
+        board[slot] = current_peice
     else:
         print("Invalid space")
     
