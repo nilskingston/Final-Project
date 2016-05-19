@@ -35,3 +35,13 @@ while True:
         print("Invalid space")
     
     print_board()
+    
+    if False:
+        break
+    
+    if current_peice == "X":
+        current_peice = "0"
+    else:
+        current_peice = "X"
+
+print("Game is over")
