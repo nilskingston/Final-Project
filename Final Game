@@ -1,9 +1,7 @@
 "nils kingston final project"
-t = 150
-s = 15
 board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
 
-
+print("\n\n\n\n\n\n\n\n\n\n\n")
 print("WELCOME")
 print('''This game uses these keys to simulate the playing area:
 Q W E
@@ -68,8 +66,9 @@ def game_over():
     
 
 keymap = {"q":0,"w":1,"e":2,"a":3,"s":4,"d":5,"z":6,"x":7,"c":8}
+print_board()
 while True:
-    slot = keymap[input("Select an open spot ")]
+    slot = keymap[input("{} select an open spot".format(current_peice))]
     
     if board[slot] == " ":
         board[slot] = current_peice
