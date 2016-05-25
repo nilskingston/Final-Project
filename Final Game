@@ -53,7 +53,7 @@ def game_over():
                 row_win = False
                 break
         if row_win:
-            return Tru
+            return True
 
 
 
