@@ -62,11 +62,16 @@ peice = board[0]
     if board[4] == peice and board[6] == peice and not peice == " ":
         return True
     
-    return F
+    return False
 
 
 
 keymap = {"q":0,"w":1,"e":2,"a":3,"s":4,"d":5,"z":6,"x":7,"c":8}
+print_board()
+while True:
+    slot = keymap[input("{} select an open spot".format(current_peice))
+    
+
 
 print("Game is over")
 
