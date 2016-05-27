@@ -55,6 +55,15 @@ def game_over():
         if row_win:
             return True
 
+peice = board[0]
+    if board[4] == peice and board[8] == peice and not peice == " ":
+        return True
+    peice = board[2]
+    if board[4] == peice and board[6] == peice and not peice == " ":
+        return True
+    
+    return False
+
 
 
 keymap = {"q":0,"w":1,"e":2,"a":3,"s":4,"d":5,"z":6,"x":7,"c":8}
