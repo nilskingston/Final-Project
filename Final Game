@@ -32,46 +32,46 @@ def game_over():
         
     for y in range(0, 3):
         position = y * 3
-        piece = board[position]
-        if piece == " ":
+        peice = board[position]
+        if peice == " ":
             continue
         row_win = True
         for x in range(1, 3):
-            if board[position + x] != piece:
+            if board[position + x] != peice:
                 row_win = False
                 break
         if row_win:
             return True
 
     for position in range(0, 3):
-        piece = board[position]
-        if piece == " ":
+        peice = board[position]
+        if peice == " ":
             continue
         row_win = True
         for y in range(1, 3):
-            if board[position + 3 * y] != piece:
+            if board[position + 3 * y] != peice:
                 row_win = False
                 break
         if row_win:
             return True
-
-peice = board[0]
-    if board[4] == piece and board[8] == piece and not piece == " ":
+    
+    peice = board[0]
+    if board[4] == peice and board[8] == peice and not peice == " ":
         return True
     peice = board[2]
-    if board[4] == piece and board[6] == piece and not piece == " ":
+    if board[4] == peice and board[6] == peice and not peice == " ":
         return True
     
     return False
-
-
+    
 
 keymap = {"q":0,"w":1,"e":2,"a":3,"s":4,"d":5,"z":6,"x":7,"c":8}
 print_board()
 while True:
-    slot = keymap[input("{} select an open spot".format(current_piece))]
-     if board[slot] == " ":
-        board[slot] = current_piece
+    slot = keymap[input("{} select an open spot".format(current_peice))]
+    
+    if board[slot] == " ":
+        board[slot] = current_peice
     else:
         print("Invalid space")
     
@@ -84,10 +84,6 @@ while True:
         current_peice = "0"
     else:
         current_peice = "X"
-
-print("Game is over")
-    
-
 
 print("Game is over")
 
