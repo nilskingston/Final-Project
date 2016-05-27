@@ -62,7 +62,7 @@ peice = board[0]
     if board[4] == peice and board[6] == peice and not peice == " ":
         return True
     
-    return False
+    return F
 
 
 
