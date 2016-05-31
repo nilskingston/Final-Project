@@ -1,33 +1,11 @@
-# Title of Your Project Here
+# Tic Tac Toe
 
+Introduction:  For my final project I made a tic tac toe game.  Online I saw lots of games using ggame and graphics, but I wanted to make a text base game.  I always understood that stuff more and I wanted it to be different from the other codes found online.
 
+Access:  To access my program, the user will need to open http://runpython.com and then go to my github accont where it will be under file name final project.
 
-## Functional Specification
+There are no graphics involved in this program.  Everything is texted based, but by using a lot of dashes, "l's", and spaces, I was able to make a gameboard.
 
-This document should become the functional specification of the project you are working on.
+The mouse does not do anything in this game.  The keys that mean anything are 'q', 'w', 'e', 'a', 's', 'd', 'z', 'x', and 'c'.  If you look down on your keyboard, those keys should look somewhat like a box.  Each key is assigned to that area on the tic tac toe board.  On the keyboard, the keys won't make a perfect box as they are on a slight angle, but as most smaller keyboards don't include a seperate area for the numbers (which would be a perfect box), I thought using these keys would be the next bext thing and make the game playable for more users.  
 
-A functional specification describes in great detail how a device or program will appear to an
-outside user. That is, it treats all hardware as a "black box", the contents of which are completely
-unknown to the user. The functional specification should include sections with the following information:
-
-Your specification **should include** the following types of information:
-
-* A title. Replace the title at the beginning of this document.
-* Summary or introduction. In general, in a few lines or less, what is your program about or what is it about?
-* How does the user access your program? Is it shared via http://runpython.com? Is a web site? Embedded in 
-  a single board computer? 
-* If there are graphics screens involved, describe every screen that the user will experience: what is it for? 
-  What did the user have to do to get there and how does she move on to the next?
-* For each graphics screen, describe every active control input and what it does. What elements on the screen will
-  change in response to user input?
-* Does the program respond to mouse input? What, exactly, does the mouse do?
-* Does the program respond to keyboard input? How?
-* What graphical assets will be used?
-* Does the user have to do anything to install the program?
-
-Your specification should **not** include the following types of information:
-
-* The language you will use to create it.
-* Names of any specific files in the project.
-* How you will structure the classes, functions and code in your program.
-* The name of any files or tools that you will use to design the program.
+The user does not need to do anything to install the program other than getting the link from my github and putting it into runpython.
