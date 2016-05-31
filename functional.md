@@ -2,7 +2,7 @@
 
 Introduction:  For my final project I made a tic tac toe game.  Online I saw lots of games using ggame and graphics, but I wanted to make a text based game.  I always understood that stuff more, and I wanted my game to be different from the other codes found online.
 
-Access:  To access my program, the user will need to open http://runpython.com and then go to my github account where it will be under file name final project.
+Access:  To access my program, the user will need to open http://runpython.com and then go to my github account where it will be under file name Final Project.
 
 There are no graphics involved in this program.  Everything is texted based but by using a lot of dashes, "l's", and spaces, I was able to make a gameboard.  Its graphics using text.
 
