@@ -29,6 +29,21 @@ def game_over():
             empty_space = True
     if not empty_space:
         return True
+    
+    for position in range(0, 3):
+        piece = board[position]
+        if piece == " ":
+            continue
+        row_win = True
+        for y in range(1, 3):
+            if board[position + 3 * y] != piece:
+                row_win = False
+                break
+        if row_win:
+            return True      
+      
+      
+      
         
     for y in range(0, 3):
         position = y * 3
@@ -43,17 +58,7 @@ def game_over():
         if row_win:
             return True
 
-    for position in range(0, 3):
-        piece = board[position]
-        if piece == " ":
-            continue
-        row_win = True
-        for y in range(1, 3):
-            if board[position + 3 * y] != piece:
-                row_win = False
-                break
-        if row_win:
-            return True
+ 
     
     piece = board[0]
     if board[4] == piece and board[8] == piece and not piece == " ":
