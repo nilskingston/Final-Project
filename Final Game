@@ -51,7 +51,7 @@ def game_over():
         for x in range(1, 3):
             if board[position + x] != piece:
                 row_win = False
-                break
+                continue
         if row_win:
             return True
 
