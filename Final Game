@@ -12,7 +12,6 @@ Z X C''')
 current_piece = "X"
 
 
-game_over = (0,1,2) or (3,4,5) or (6,7,8) or (0,3,6) or (1,4,7) or (2,5,8) or (0,4,8) or (2,4,6)
 def print_board():
     print("=======")
     print("|{}|{}|{}|".format(board[0], board[1], board[2]))
@@ -29,6 +28,7 @@ def game_over():
             empty_space = True
     if not empty_space:
         return True
+        
     for position in range(0, 3):
         piece = board[position]
         if piece == " ":
@@ -37,7 +37,7 @@ def game_over():
         for y in range(1, 3):
             if board[position + 3 * y] != piece:
                 row_win = False
-                break
+                continue 
         if row_win:
             return True      
       
